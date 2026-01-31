@@ -1,0 +1,86 @@
+/* Register.css */
+
+/* Usamos la misma estructura base para consistencia */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-card {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.register-card h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Estilos de los inputs */
+.form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #28a745; /* Verde al enfocar */
+  outline: none;
+}
+
+/* Botón de Registro (Verde) */
+.btn-register {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745; /* Color verde para indicar "Crear" */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.btn-register:hover {
+  background-color: #218838;
+}
+
+/* Sección para volver al login */
+.login-link {
+  margin-top: 1.5rem;
+  display: block;
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
