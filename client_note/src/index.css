@@ -1,0 +1,163 @@
+/* Global styles for dark formal theme */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scroll effects */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section styles */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.parallax-3d {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  font-size: 8rem;
+  opacity: 0.7;
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+}
+
+.features {
+  background-color: #1a1a1a;
+}
+
+.benefits {
+  background: linear-gradient(135deg, #2c2c2c, #1e1e1e);
+}
+
+.footer {
+  background-color: #0f0f0f;
+  min-height: 50vh;
+}
+
+/* Card styles */
+.card {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Button styles */
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 1rem;
+  
+}
+.iniciarsesion{
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Grid for features */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Benefits list */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem;
+  }
+  .card {
+    margin: 0.5rem;
+  }
+}
+
+
