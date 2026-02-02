@@ -14,7 +14,7 @@ function LoginPage() {
         email,
         password,
       });
-      window.location.href = "/";
+      window.location.href = "/HomePage";
     } catch (error) {
       if (error.response && error.response.status === 401) {
         alert("Credenciales inválidas");

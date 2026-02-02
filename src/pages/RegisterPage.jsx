@@ -14,7 +14,7 @@ function RegisterPage() {
         email,
         password,
       });
-      window.location.href = "/";
+      window.location.href = "/login";
     } catch (error) {
       if (error.response && error.response.status === 401) {
         alert("Error en el registro");

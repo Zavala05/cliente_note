@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import httpClient from "../httpClient";
 
 function Home() {
@@ -39,12 +40,12 @@ function Home() {
         <div>
           <p>You are not logged in</p>
           <div>
-            <a href="/login">
+            <Link to="/login">
               <button>Login</button>
-            </a>
-            <a href="/register">
+            </Link>
+            <Link to="/register">
               <button>Register</button>
-            </a>
+            </Link>
           </div>
         </div>
       )}
